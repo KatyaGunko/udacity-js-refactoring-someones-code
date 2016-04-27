@@ -12,15 +12,16 @@
 var attendanceModel = (function() {
 
     var model = {
-        attendanceList = [],
-        initAttendanceList: initAttendanceList
+        studentsList = [],
+        initStudentsList: initStudentsList
     }
 
-    function initAttendanceList(studentsList) {
+    function initStudentsList(studentsList) {
 
         for (var i = studentsList.length - 1; i >= 0; i--) {
+            studentsList[i].attendance = [];
             for (var j = 0; j < 7 ; j++) {
-                Things[i]
+                studentsList[i][j] = 
             }
             studentsList[i]
         }
